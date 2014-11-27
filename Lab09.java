@@ -99,7 +99,10 @@ public class Lab09 {
 }
 }
       
-      pete.explode();
+      pete.turnAround();
+      while (pete.frontIsClear()){
+         pete.move();
 	 }
+    }
  }
  }
