@@ -24,6 +24,7 @@ public class Lab09 {
        int count4 = 0;
        int count5 = 0;
        int count6 = 0;
+       int count7 = 0;
        
        while (pete.nextToABeeper()) {
        pete.pickBeeper();
@@ -89,12 +90,26 @@ public class Lab09 {
        if (pete.hasBeepers()){
          for (int t = 0; t < count5; count5--){
             pete.putBeeper();
+            
 }
 }
       pete.move();
       
-      if (pete.hasBeepers()){
+      while (pete.nextToABeeper()) {
+       pete.pickBeeper();
+       count7++;
+       }
+       
+      
+       if (pete.hasBeepers()){
          for (int t = 0; t < count6; count6--){
+            pete.putBeeper();
+      }
+}
+      pete.move();
+
+      if (pete.hasBeepers()){
+         for (int t = 0; t < count7; count7--){
             pete.putBeeper();
 }
 }
